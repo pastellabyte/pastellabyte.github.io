@@ -1,65 +1,63 @@
 body {
-    background-color: #b5dda3;
-    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+
+    margin: 0;
+  }
+  canvas {
+    display: block;
+  }
+
+
+
+
+.hero {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
 }
 
-#canvas {
-    background-color: #e6e6e6;
-    cursor: crosshair;
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
 
+.hero p {
+    font-size: 1.2rem;
+}
+
+.btn-custom {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #e85a4f;
+}
+
+.projects img {
     border-radius: 10px;
-    background-color: white;
-    border: 5px solid #292929;
-    overflow: hidden;
-
-    margin-top: 10px;
-    margin-bottom: 10px;
+    transition: transform 0.3s ease;
 }
 
-h1 {
-    left: 50%;
-    font-size: 64px;
-
-    font-family: "Jersey 15";
-    font-weight: 400;
-    font-style: normal;
-    background: -webkit-linear-gradient(#2dffcb, #3168ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.projects img:hover {
+    transform: scale(1.05);
 }
 
-input[type=color] {
-    background-color: #292929;
-    border: none;
+.footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
 
-input[type=range] {
-    padding-top: 10px;
-    -webkit-appearance: none;
+.footer a {
+    color: #ff9a9e;
+    text-decoration: none;
 }
 
-input[type=range]::-webkit-slider-runnable-track {
-    width: 300px;
-    height: 5px;
-    background: #4b4b4b;
-    border: none;
-    border-radius: 3px;
-}
-
-input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    border: 2px solid #292929;
-    height: 800%;
-    width: 20px;
-    border-radius: 2;
-    background: rgb(197, 194, 185);
-    margin-top: -18px;
-}
-
-input[type=range]:focus {
-    outline: none;
-}
-
-input[type=range]:focus::-webkit-slider-runnable-track {
-    background: #646464;
+.footer a:hover {
+    text-decoration: underline;
 }
